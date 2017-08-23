@@ -1,0 +1,63 @@
+@import "menu";
+
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+}
+body {
+  position: absolute;
+}
+.nonScrollable {
+  overflow: hidden;
+}
+
+// ---------------------------------------------------------------------------->
+.currentView {
+  position: absolute;
+  top: 15%;
+  max-width: 100%;
+  width: 100%;
+  height: 85%;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.currentView * {
+  // display: block;
+}
+
+.translateRight {
+  position: relative;
+  top: -100%;
+  left: 100%;
+}
+.transalateLeft {
+  position: relative;
+  top: -100%;
+  right: 100%;
+}
+
+
+.slideLeft {
+  animation: slideLeft 0.5s forwards;
+  animation-timing-function: ease-out;
+}
+@keyframes slideLeft {
+  100% { transform: translateX(-100%) }
+}
+
+.slideRight {
+  animation: slideRight 0.5s forwards;
+  animation-timing-function: ease-out;
+}
+@keyframes slideRight {
+  100% { transform: translateX(100%) }
+}
+// ---------------------------------------------------------------------------->
+
+
+@import "mainPage";
+@import "workCategory";
+@import "work";
+@import "about";
+@import "contact";

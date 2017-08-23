@@ -1,0 +1,49 @@
+.categories {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  height: 5%;
+  padding-bottom: 2%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  p {
+  box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 6vh;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  font: {
+    family: 'Poiret One', sans-serif;
+    // size: 1em;
+  }
+  }
+  .category:hover {
+    cursor: pointer;
+  }
+  .wiggle.hover,
+  .category-wrapper:hover > .wiggle {
+    cursor: pointer;
+    animation: wiggle .1s steps(1);
+    animation-fill-mode: forwards;
+  }
+  @keyframes wiggle {
+  	100% { background-position: 100%; }
+  }
+  .wiggle {
+    width: 52px;
+    height: 19px;
+    background: url("../img/wigleSprite.png");
+    margin: 0 auto;
+  }
+}

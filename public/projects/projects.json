@@ -1,0 +1,263 @@
+[
+  {
+    "id" : "0",
+    "title" : "Jazzy Estonie & Elsass Groove",
+    "icon" : "projects/graphics/jazzy_estonie/1.png",
+    "description_en" : "Une affiche A3 et le flyer A6 recto verso réalisées pour le concert de musiciens estoniens et alsaciens. La commande pour la Ministère de la Culture d’Estonie dans la cadre de la Présidence de l’Estonie au Conseil de l’Europe en May-Novembre 2016. Les couleurs principales sur l’affiche font l’appel aux couleurs du drapeau d’estoniens ; bleu, noir et blanc. La cigogne, le symbole de l’Alsace, rappele une contribution de musiciens alsaciens dans cet événement culturel.",
+    "description_fr" : "Une affiche A3 et le flyer A6 recto verso réalisées pour le concert de musiciens estoniens et alsaciens. La commande pour la Ministère de la Culture d’Estonie dans la cadre de la Présidence de l’Estonie au Conseil de l’Europe en May-Novembre 2016. Les couleurs principales sur l’affiche font l’appel aux couleurs du drapeau d’estoniens ; bleu, noir et blanc. La cigogne, le symbole de l’Alsace, rappele une contribution de musiciens alsaciens dans cet événement culturel.",
+    "icons" : [
+      {
+        "id" : "0",
+        "patch" : "projects/graphics/jazzy_estonie/2.jpg"
+      }
+    ],
+    "img" : [
+      {
+        "id" : "0",
+        "patch" : "projects/graphics/jazzy_estonie/3.png"
+      },
+      {
+        "id" : "1",
+        "patch" : "projects/graphics/jazzy_estonie/4.png"
+      },
+      {
+        "id" : "2",
+        "patch" : "projects/graphics/jazzy_estonie/5.png"
+      },
+      {
+        "id" : "3",
+        "patch" : "projects/graphics/jazzy_estonie/6.png"
+      }
+    ],
+    "video" : [
+      {
+        "id" : "0",
+        "patch" : "<iframe src='https://www.youtube.com/embed/tIG30e54txE' frameborder='0' allowfullscreen></iframe>"
+      }
+    ],
+    "category" : "graphics",
+    "template" : "graphics"
+  },
+
+  {
+    "id" : "1",
+    "title" : "Les Journées de l'Art Slave",
+    "icon" : "projects/video/lesJournees/1.png",
+    "description_en" : "Vidéo réalisée à l’occassion du première édition d’événement culturel « Les Journées de l’art slave » qui avait lié à Strasbourg, pendant le weekend du 12-13 mars 2016. Principalement, cette action est organisée par L’Association Culturelle Russe de Strasbourg en étroite collaboration avec Le Consulat Général de la Fédération de Russie à Strasbourg et un autre l’association culturelle strasbourgois, Art Radouga. Pendant ce court vidéo je montre le programme riche en prestations culturelles différentes, proposées au publique strasbourgois pendant ce deux jours.",
+    "description_fr" : "Vidéo réalisée à l’occassion du première édition d’événement culturel « Les Journées de l’art slave » qui avait lié à Strasbourg, pendant le weekend du 12-13 mars 2016. Principalement, cette action est organisée par L’Association Culturelle Russe de Strasbourg en étroite collaboration avec Le Consulat Général de la Fédération de Russie à Strasbourg et un autre l’association culturelle strasbourgois, Art Radouga. Pendant ce court vidéo je montre le programme riche en prestations culturelles différentes, proposées au publique strasbourgois pendant ce deux jours.",
+    "img" : [
+      {
+        "id" : "0",
+        "patch" : "projects/video/lesJournees/2.png"
+      },
+      {
+        "id" : "1",
+        "patch" : "projects/video/lesJournees/3.jpg"
+      },
+      {
+        "id" : "3",
+        "patch" : "projects/video/lesJournees/4.jpg"
+      }
+    ],
+    "video" : [
+      {
+        "id" : "0",
+        "patch" : "<iframe src='https://www.youtube.com/embed/p4G1JJKfT70' frameborder='0' allowfullscreen></iframe>"
+      }
+    ],
+    "category" : "video",
+    "template" : "video"
+  },
+
+  {
+    "id" : "2",
+    "title" : "Caractère illustration",
+    "icon" : "projects/illustration/caractere_illustration/1.png",
+    "description_en" : "Les illustration faites pour le projet personnel. Les caractères réalisées à partir des esquisses, ensuite colorées dans Photoshop.",
+    "description_fr" : "Les illustration faites pour le projet personnel. Les caractères réalisées à partir des esquisses, ensuite colorées dans Photoshop.",
+    "imgCustom" : [
+      {
+        "id" : "0",
+        "patch" : "projects/illustration/caractere_illustration/2.png"
+      },
+      {
+        "id" : "1",
+        "patch" : "projects/illustration/caractere_illustration/3.png"
+      },
+      {
+        "id" : "2",
+        "patch" : "projects/illustration/caractere_illustration/4.png"
+      }
+    ],
+    "video" : [],
+    "category" : "illustration",
+    "template" : "caractere_illustration"
+  },
+
+  {
+    "id" : "3",
+    "title" : "Tout-Couleur",
+    "icon" : "projects/graphics/tout_couleur/1.png",
+    "description_en" : "Un press-book réalisé pour l’association Tout - Couleur, opérative au sein des structures d’EPSAN (Établissement Public de Santé Alsace Nord) à Strasbourg. Tout - Couleur s’occupe de promouvoir de l’art parmi les patients de l’hôpital comme un moyen de thérapie et organise également les expositions de leurs tableaux. Le livret en format carré présente, entre autres, l’idée et l’histoire de l’association, les œuvres des patients, le calendrier des expositions, les articles de presse.",
+    "description_fr" : "Un press-book réalisé pour l’association Tout - Couleur, opérative au sein des structures d’EPSAN (Établissement Public de Santé Alsace Nord) à Strasbourg. Tout - Couleur s’occupe de promouvoir de l’art parmi les patients de l’hôpital comme un moyen de thérapie et organise également les expositions de leurs tableaux. Le livret en format carré présente, entre autres, l’idée et l’histoire de l’association, les œuvres des patients, le calendrier des expositions, les articles de presse.",
+    "icons" : [
+      {
+        "id" : "0",
+        "patch" : "projects/graphics/tout_couleur/2.jpg"
+      }
+    ],
+    "img" : [
+      {
+        "id" : "0",
+        "patch" : "projects/graphics/tout_couleur/3.png"
+      },
+      {
+        "id" : "1",
+        "patch" : "projects/graphics/tout_couleur/4.png"
+      },
+      {
+        "id" : "2",
+        "patch" : "projects/graphics/tout_couleur/5.png"
+      },
+      {
+        "id" : "3",
+        "patch" : "projects/graphics/tout_couleur/6.png"
+      },
+      {
+        "id" : "4",
+        "patch" : "projects/graphics/tout_couleur/7.png"
+      }
+    ],
+    "video" : [],
+    "category" : "graphics",
+    "template" : "graphics"
+  },
+
+  {
+    "id" : "4",
+    "title" : "Portraits",
+    "icon" : "projects/illustration/portraits/1.png",
+    "description_en" : "Les portraits réalisés avec de techniques traditionels, comme les pastels secs ou crayons colorés. Photoshop utilisé pour certains dans le but d’avoir des différéntes d’effets visuels.",
+    "description_fr" : "Les portraits réalisés avec de techniques traditionels, comme les pastels secs ou crayons colorés. Photoshop utilisé pour certains dans le but d’avoir des différéntes d’effets visuels.",
+    "img" : [
+      {
+        "id" : "0",
+        "patch" : "projects/illustration/portraits/2.png"
+      },
+      {
+        "id" : "1",
+        "patch" : "projects/illustration/portraits/3.png"
+      }
+    ],
+    "video" : [],
+    "category" : "illustration",
+    "template" : "illustration"
+  },
+
+  {
+    "id" : "5",
+    "title" : "La Méridienne I et II",
+    "icon" : "projects/graphics/meridienne/1.jpg",
+    "description_en" : "Le logo, les trois affiches et le programme réalisés pour le théâtre La Méridienne à Lunéville. Le premier logo et les affiches représentent un ensemble. Le livret du programme est composé à la base d’un autre logo proposé.",
+    "description_fr" : "Le logo, les trois affiches et le programme réalisés pour le théâtre La Méridienne à Lunéville. Le premier logo et les affiches représentent un ensemble. Le livret du programme est composé à la base d’un autre logo proposé.",
+    "img" : [
+      {
+        "id" : "0",
+        "patch" : "projects/graphics/meridienne/meridienne_I/2.png"
+      },
+      {
+        "id" : "1",
+        "patch" : "projects/graphics/meridienne/meridienne_I/3.png"
+      },
+      {
+        "id" : "2",
+        "patch" : "projects/graphics/meridienne/meridienne_I/4.png"
+      },
+      {
+        "id" : "3",
+        "patch" : "projects/graphics/meridienne/meridienne_I/5.png"
+      },
+      {
+        "id" : "4",
+        "patch" : "projects/graphics/meridienne/meridienne_II/2.png"
+      },
+      {
+        "id" : "5",
+        "patch" : "projects/graphics/meridienne/meridienne_II/3.jpg"
+      },
+      {
+        "id" : "6",
+        "patch" : "projects/graphics/meridienne/meridienne_II/4.png"
+      },
+      {
+        "id" : "7",
+        "patch" : "projects/graphics/meridienne/meridienne_II/5.png"
+      },
+      {
+        "id" : "8",
+        "patch" : "projects/graphics/meridienne/meridienne_II/6.png"
+      },
+      {
+        "id" : "9",
+        "patch" : "projects/graphics/meridienne/meridienne_II/7.png"
+      }
+    ],
+    "video" : [],
+    "category" : "graphics",
+    "template" : "graphics"
+  },
+
+  {
+    "id" : "6",
+    "title" : "Pocket book série",
+    "icon" : "projects/graphics/pocket_book/1.png",
+    "description_en" : "Une série de couvertures des livres dans l’édition spécial, nommée « Livre de poche ». La conception graphique basée sur des vraies instalations des objets et matières et ensuite prises en photo et corrigés légérement dans Photoshop. Les couleurs de typographie adaptés aux couleurs de compositions photographiques.",
+    "description_fr" : "Une série de couvertures des livres dans l’édition spécial, nommée « Livre de poche ». La conception graphique basée sur des vraies instalations des objets et matières et ensuite prises en photo et corrigés légérement dans Photoshop. Les couleurs de typographie adaptés aux couleurs de compositions photographiques.",
+    "img" : [
+      {
+        "id" : "0",
+        "patch" : "projects/graphics/pocket_book/2.png"
+      },
+      {
+        "id" : "1",
+        "patch" : "projects/graphics/pocket_book/3.png"
+      },
+      {
+        "id" : "2",
+        "patch" : "projects/graphics/pocket_book/4.png"
+      },
+      {
+        "id" : "3",
+        "patch" : "projects/graphics/pocket_book/5.png"
+      },
+      {
+        "id" : "4",
+        "patch" : "projects/graphics/pocket_book/6.png"
+      }
+    ],
+    "video" : [],
+    "category" : "graphics",
+    "template" : "graphics"
+  },
+
+  {
+    "id" : "9",
+    "title" : "Area 52",
+    "icon" : "projects/graphics/area52/1.png",
+    "description_en" : "Création d’une pochette vinyle, recto verso, d’une pochette intérieur et pour le disque titré « Area 52 » d’un duo méxicaine Rodrigo y Gabriela. Les couleurs chaudes, la guitare et les silhouetes floues reflètent l’ambiance de la musique de ce disque. Le projet universitaire.",
+    "description_fr" : "Création d’une pochette vinyle, recto verso, d’une pochette intérieur et pour le disque titré « Area 52 » d’un duo méxicaine Rodrigo y Gabriela. Les couleurs chaudes, la guitare et les silhouetes floues reflètent l’ambiance de la musique de ce disque. Le projet universitaire.",
+    "imgCustom" : [
+      {
+        "id" : "0",
+        "patch" : "projects/graphics/area52/2.png"
+      },
+      {
+        "id" : "1",
+        "patch" : "projects/graphics/area52/3.png"
+      }
+    ],
+    "video" : [],
+    "category" : "graphics",
+    "template" : "area52"
+  }
+]
