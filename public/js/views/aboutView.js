@@ -10,6 +10,7 @@ AboutView = Backbone.View.extend({
     var template = currentViewModel.get( "template" );
     this.$el.append(template);
     $(this.el).addClass(currentViewModel.get( "templatePage" ));
+    $(this.el).addClass("pt-4-5");
 
     $('.currentView').append(this.el);
 
