@@ -60,7 +60,7 @@ MenuView = Backbone.View.extend({
     $('#menuIcon').removeClass('unrotated');
     $('#menuIcon').addClass('rotated')
 
-    $('.menuList').removeClass('close');
+    $('.menuList').removeClass('closed');
     $('.menuList').addClass('open');
   },
 
@@ -71,7 +71,7 @@ MenuView = Backbone.View.extend({
         $('#menuIcon').removeClass('rotated');
         $('#menuIcon').addClass('unrotated');
 
-        $('.menuList').addClass('close');
+        $('.menuList').addClass('closed');
         $('.menuList').removeClass('open');
       }
     }, 100);

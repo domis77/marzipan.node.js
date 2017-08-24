@@ -7,7 +7,7 @@
 @keyframes menu-open {
   100% {
     left: 0px; } }
-.close {
+.closed {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   /*animation-direction: normal;*/

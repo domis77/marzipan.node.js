@@ -12,21 +12,29 @@
 	</head>
 	<body id= "mainPage">
 
-		<section class = "menu staticMenuBackground">
-			<div class = "menuContent">
-				<div class = "menuIcon-wrapper">
-					<a href = "#" class = "menuIconLink">
-						<img id = "menuIcon" src = "img/menu.png" >
-					</a>
+		<section class = "menu container-fluid">
+			<div class = "menuContent row no-gutters pt-5">
+				<div class = "menuIcon-wrapper col-1">
+					<div class = "d-flex justify-content-end h-sm-50 h-25">
+						<a href = "#" class = "menuIconLink h-100">
+							<img id = "menuIcon" src = "img/menu.png" class="img-fluid h-100">
+						</a>
+					</div>
 				</div>
 
-				<div class = "menuList-wrapper">
+				<div class = "menuList-wrapper col-9">
 				</div>
 
-				<div class = "languageChoice">
-					<img src = "img/language.png" id = "languageImg" >
-					<div class = "lang" id = "fr"></div>
-					<div class = "lang" id = "en"></div>
+				<div class = "languageChoice col-2 col-sm-1">
+					<div class = "d-flex justify-content-end h-sm-50 h-25">
+						<!-- <img src = "img/language.png" id = "languageImg" class = "h-100"> -->
+						<img src = "img/language_fr.png" id = "fr" class = "lang h-100 float-left">
+						<img src = "img/language_en.png" id = "en" class = "lang h-100 float-left">
+					</div>
+					<!-- <div style="width: auto;height: 100%;position: relative;top: -100%;">
+						<div class = "lang" id = "fr"></div>
+						<div class = "lang" id = "en"></div>
+					</div> -->
 				</div>
 			</div>
 		</section>

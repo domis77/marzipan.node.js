@@ -1,55 +1,57 @@
 .menuContent {
-  box-sizing: border-box;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(0%, -50%);
-          transform: translate(0%, -50%);
-  height: 20%;
-  width: 100%;
-  padding-left: 5%;
-  padding-right: 5%;
+  // box-sizing: border-box;
+  // position: absolute;
+  // top: 50%;
+  // -webkit-transform: translate(0%, -50%);
+  //         transform: translate(0%, -50%);
+  // height: 20%;
+  // width: 100%;
+  // padding-left: 5%;
+  // padding-right: 5%;
 }
 .menu {
-  height: 15%;
-  width: 100%;
-  z-index: 1;
-  position: relative;
-  position: fixed;
-  background: white;
+  // height: 15%;
+  // width: 100%;
+  // z-index: 1;
+  // position: relative;
+  // position: fixed;
+  // background: white;
     .menuIcon-wrapper {
-      float: left;
-      height: 100%;
-      width: auto;
+      // float: left;
+      // height: 100%;
+      // width: auto;
         .menuIconLink {
-          height: auto;
+          // height: auto;
+          height: 50%;
             #menuIcon {
               height: 100%;
+              widows: auto;
             }
         }
     }
     .menuList-wrapper {
-        float: left;
+        // float: left;
         overflow: hidden;
-        width: auto;
-        height: 100%;
+        // width: auto;
+        // height: 100%;
           nav {
             position: relative;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
+            // display: -webkit-box;
+            // display: -ms-flexbox;
+            // display: flex;
             left: -100%;
 
-            max-width: 100%;
-            width: auto;
-            height: 100%;
-            -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
-            -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
+            // max-width: 100%;
+            // width: auto;
+            // height: 100%;
+            // -webkit-box-align: center;
+            //     -ms-flex-align: center;
+            //         align-items: center;
+            // -webkit-box-pack: center;
+            //     -ms-flex-pack: center;
+            //         justify-content: center;
               a {
-              box-sizing: border-box;
+              // box-sizing: border-box;
               text-decoration: none;
               margin: 0 6vh;
               font: {
@@ -62,12 +64,12 @@
     }
 
     .languageChoice {
-      width: auto;
-      height: 100%;
-      float: right;
+      // width: auto;
+      // height: 100%;
+      // float: right;
       #languageImg {
-        width: auto;
-        height: 100%;
+        // width: auto;
+        // height: 100%;
       }
     }
 }
@@ -84,18 +86,18 @@
     color: #FCC672;
 }
 .backlight {
-    color: #FCC672;
+    color: #FCC672!important;
 }
 
 
 
 .lang {
-  position: relative;
-  top: -100%;
-  height: 100%;
-  width: 50%;
-  margin: 0 0;
-  float: left;
+  // position: relative;
+  // top: -100%;
+  // height: 100%;
+  // width: 50%;
+  // margin: 0 0;
+  // float: left;
   cursor: pointer;
 }
 #fr:hover {

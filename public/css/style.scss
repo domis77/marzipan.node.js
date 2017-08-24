@@ -14,10 +14,10 @@ body {
 
 // ---------------------------------------------------------------------------->
 .currentView {
-  position: absolute;
-  top: 15%;
-  max-width: 100%;
-  width: 100%;
+  // position: absolute;
+  // top: 15%;
+  // max-width: 100%;
+  // width: 100%;
   height: 85%;
   cursor: -webkit-grab;
   cursor: grab;
@@ -61,3 +61,29 @@ body {
 @import "work";
 @import "about";
 @import "contact";
+
+
+
+//--BOOTSTRAP
+
+$breakpoints: (sm: 576, md: 768, lg: 992);
+$percent: (25, 50, 75, 100);
+$spacer: 1rem !default;
+
+
+//* utilities/sizing: height
+@each $b, $s in $breakpoints {
+  @each $p in $percent {
+    .h-#{$b}-#{$p} {
+      @media (min-width: #{$s}px) { 
+        height: #{$p}%!important; 
+      }
+    }
+  }
+}
+
+
+//padding-top 2rem
+.pt-4-5 {
+  padding-top: ($spacer * 2)!important;
+}
