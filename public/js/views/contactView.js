@@ -10,6 +10,7 @@ ContactView = Backbone.View.extend({
     var template = currentViewModel.get( "template" );
     this.$el.append(template);
     $(this.el).addClass(currentViewModel.get( "templatePage" ));
+    $(this.el).addClass("pt-4");
 
     $('.currentView').append(this.el);
 

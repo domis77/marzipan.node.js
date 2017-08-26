@@ -11,7 +11,7 @@ MainPageView = Backbone.View.extend({
     var template = currentViewModel.get( "template" );
     this.$el.append(template);
     $(this.el).addClass(currentViewModel.get( "templatePage" ));
-    $(this.el).addClass("row justify-content-center");
+  
 
     $('.currentView').append(this.el);
 

@@ -1,19 +1,21 @@
-.menu .menuIcon-wrapper .menuIconLink {
-  height: 50%; }
-  .menu .menuIcon-wrapper .menuIconLink #menuIcon {
-    height: 100%;
-    widows: auto; }
-.menu .menuList-wrapper {
-  overflow: hidden; }
-  .menu .menuList-wrapper nav {
-    position: relative;
-    left: -100%; }
-    .menu .menuList-wrapper nav a {
-      text-decoration: none;
-      margin: 0 6vh;
-      font-weight: bold;
-      font-family: Verdana;
-      font-size: 1em; }
+.menu {
+  background-color: #fff; }
+  .menu .menuIcon-wrapper .menuIconLink {
+    height: 50%; }
+    .menu .menuIcon-wrapper .menuIconLink #menuIcon {
+      height: 100%;
+      widows: auto; }
+  .menu .menuList-wrapper {
+    overflow: hidden; }
+    .menu .menuList-wrapper nav {
+      position: relative;
+      left: -100%; }
+      .menu .menuList-wrapper nav a {
+        text-decoration: none;
+        margin: 0 6vh;
+        font-weight: bold;
+        font-family: Verdana;
+        font-size: 1em; }
 
 .scrollableContent {
   position: fixed;
@@ -55,18 +57,24 @@ body {
   overflow: hidden; }
 
 .currentView {
+  position: relative;
+  overflow-x: hidden;
   cursor: -webkit-grab;
   cursor: grab; }
 
 .translateRight {
-  position: relative;
-  top: -100%;
-  left: 100%; }
+  position: absolute;
+  top: 0;
+  left: 100%;
+  padding: 0 !important;
+  margin: 0 !important; }
 
 .transalateLeft {
-  position: relative;
-  top: -100%;
-  right: 100%; }
+  position: absolute;
+  top: 0;
+  right: 100%;
+  padding: 0 !important;
+  margin: 0 !important; }
 
 .slideLeft {
   animation: slideLeft 0.5s forwards;
@@ -74,7 +82,7 @@ body {
 
 @keyframes slideLeft {
   100% {
-    transform: translateX(-100%); } }
+    left: 0; } }
 .slideRight {
   animation: slideRight 0.5s forwards;
   animation-timing-function: ease-out; }
@@ -540,158 +548,151 @@ body {
   font-size: 14px; }
 
 .contact {
-  width: 100%;
-  height: 100%;
   background-color: white; }
-  .contact .header {
-    width: 100%;
-    margin-left: 0 auto; }
-    .contact .header p {
-      width: 44%;
-      text-align: center;
-      margin: 0 auto; }
-    .contact .header h1 {
-      text-align: center; }
-  .contact .contactFormSection {
-    position: relative;
-    height: 50%;
-    width: 25%;
-    margin: auto;
-    text-align: center; }
-    .contact .contactFormSection .contactForm {
-      width: auto;
-      height: 100%;
-      margin: auto; }
-      .contact .contactFormSection .contactForm .input {
-        box-sizing: border-box;
-        margin: auto;
-        width: 100%;
-        text-align: center;
-        border: 1px solid; }
-      .contact .contactFormSection .contactForm #nameInput, .contact .contactFormSection .contactForm #emailInput {
-        height: 10%; }
-      .contact .contactFormSection .contactForm #emailInput {
-        position: relative;
-        height: 10%;
-        top: 3.33%; }
-      .contact .contactFormSection .contactForm #messageInput {
-        position: relative;
-        top: 6.66%;
-        height: 40%;
-        resize: none; }
-      .contact .contactFormSection .contactForm #sendButton {
-        box-sizing: border-box;
-        position: relative;
-        top: 9.99%;
-        margin: auto 0;
-        float: left;
-        width: 40%;
-        height: 30%;
-        color: #FCCD82;
-        background-color: #FFFFFF;
-        text-align: center;
-        border: 1px solid black; }
-      .contact .contactFormSection .contactForm .contactAnimation {
-        position: relative;
-        float: left;
-        margin: auto 0;
-        top: 9.99%;
-        width: 60%;
-        height: 30%; }
-        .contact .contactFormSection .contactForm .contactAnimation #contactAnimation {
-          width: 100%;
-          height: 100%; }
-      .contact .contactFormSection .contactForm ::-webkit-input-placeholder {
-        /* Chrome/Opera/Safari */
-        color: #FCCD82; }
-      .contact .contactFormSection .contactForm ::-moz-placeholder {
-        /* Firefox 19+ */
-        color: #FCCD82; }
-      .contact .contactFormSection .contactForm :-ms-input-placeholder {
-        /* IE 10+ */
-        color: #FCCD82; }
-      .contact .contactFormSection .contactForm :-moz-placeholder {
-        /* Firefox 18- */
-        color: #FCCD82; }
-  .contact .contactFooter {
-    width: 50%;
-    height: 7%;
-    margin: 0 auto;
-    position: relative;
-    top: 5%; }
-    .contact .contactFooter div {
-      height: 100%;
-      width: 25%;
-      float: left; }
-      .contact .contactFooter div .socialMediaIcon {
-        width: auto;
-        height: 100%; }
-      .contact .contactFooter div img {
-        width: auto;
-        height: 100%;
-        margin: 0 auto; }
-  .contact .copyright {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    position: relative;
-    top: 10%; }
-    .contact .copyright p {
-      text-align: center;
-      margin: 0 auto;
-      font-family: 'Verdana';
-      font-size: 12px;
-      color: #9aa1ad; }
+  .contact .header div p {
+    font-family: 'Verdana';
+    font-size: 0.85rem; }
+  .contact .header div h6 {
+    font-family: 'Verdana';
+    font-weight: bold; }
+  .contact .contactFormSection .contactForm .input {
+    border: 1px solid black;
+    border-radius: unset;
+    text-align: center;
+    font-size: 0.8rem; }
+  .contact .contactFormSection .contactForm #sendButton {
+    color: #FCCD82;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    border-radius: unset;
+    font-size: 0.8rem;
+    cursor: pointer; }
+  .contact .contactFormSection .contactForm ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #FCCD82; }
+  .contact .contactFormSection .contactForm ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #FCCD82; }
+  .contact .contactFormSection .contactForm :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #FCCD82; }
+  .contact .contactFormSection .contactForm :-moz-placeholder {
+    /* Firefox 18- */
+    color: #FCCD82; }
+  .contact .copyright p {
+    font-family: 'Verdana';
+    font-size: 12px;
+    color: #9aa1ad; }
+    @media (max-width: 991px) {
+      .contact .copyright p {
+        font-size: 18px; } }
+    @media (max-width: 767px) {
+      .contact .copyright p {
+        font-size: 16px; } }
 
+/*
+//--BOOTSTRAP Custom
+*/
 @media (min-width: 576px) {
   .h-sm-25 {
     height: 25%!important; } }
+
+@media (min-width: 576px) {
+  .w-sm-25 {
+    width: 25%!important; } }
 
 @media (min-width: 576px) {
   .h-sm-50 {
     height: 50%!important; } }
 
 @media (min-width: 576px) {
+  .w-sm-50 {
+    width: 50%!important; } }
+
+@media (min-width: 576px) {
   .h-sm-75 {
     height: 75%!important; } }
 
 @media (min-width: 576px) {
+  .w-sm-75 {
+    width: 75%!important; } }
+
+@media (min-width: 576px) {
   .h-sm-100 {
     height: 100%!important; } }
+
+@media (min-width: 576px) {
+  .w-sm-100 {
+    width: 100%!important; } }
 
 @media (min-width: 768px) {
   .h-md-25 {
     height: 25%!important; } }
 
 @media (min-width: 768px) {
+  .w-md-25 {
+    width: 25%!important; } }
+
+@media (min-width: 768px) {
   .h-md-50 {
     height: 50%!important; } }
+
+@media (min-width: 768px) {
+  .w-md-50 {
+    width: 50%!important; } }
 
 @media (min-width: 768px) {
   .h-md-75 {
     height: 75%!important; } }
 
 @media (min-width: 768px) {
+  .w-md-75 {
+    width: 75%!important; } }
+
+@media (min-width: 768px) {
   .h-md-100 {
     height: 100%!important; } }
+
+@media (min-width: 768px) {
+  .w-md-100 {
+    width: 100%!important; } }
 
 @media (min-width: 992px) {
   .h-lg-25 {
     height: 25%!important; } }
 
 @media (min-width: 992px) {
+  .w-lg-25 {
+    width: 25%!important; } }
+
+@media (min-width: 992px) {
   .h-lg-50 {
     height: 50%!important; } }
+
+@media (min-width: 992px) {
+  .w-lg-50 {
+    width: 50%!important; } }
 
 @media (min-width: 992px) {
   .h-lg-75 {
     height: 75%!important; } }
 
 @media (min-width: 992px) {
+  .w-lg-75 {
+    width: 75%!important; } }
+
+@media (min-width: 992px) {
   .h-lg-100 {
     height: 100%!important; } }
 
+@media (min-width: 992px) {
+  .w-lg-100 {
+    width: 100%!important; } }
+
 .pt-4-5 {
   padding-top: 2rem !important; }
+
+.mt-4-5 {
+  margin-top: 2rem !important; }
 
 /*# sourceMappingURL=style.css.map */

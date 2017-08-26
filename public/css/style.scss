@@ -15,6 +15,9 @@ body {
 // ---------------------------------------------------------------------------->
 .currentView {
   // position: absolute;
+  position: relative;
+  overflow-x: hidden;
+  // height: 100%;
   // top: 15%;
   // max-width: 100%;
   // width: 100%;
@@ -26,15 +29,25 @@ body {
   // display: block;
 }
 
+
+
 .translateRight {
-  position: relative;
-  top: -100%;
+  // position: relative;
+  position: absolute;
+  // top: -100%;
+  top: 0;
   left: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 .transalateLeft {
-  position: relative;
-  top: -100%;
+  // position: relative;
+  position: absolute;
+  // top: -100%;
+  top: 0;
   right: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 
@@ -43,7 +56,8 @@ body {
   animation-timing-function: ease-out;
 }
 @keyframes slideLeft {
-  100% { transform: translateX(-100%) }
+  // 100% { transform: translateX(-100%) }
+  100% { left: 0; }
 }
 
 .slideRight {
@@ -64,8 +78,10 @@ body {
 
 
 
-//--BOOTSTRAP
 
+/*
+//--BOOTSTRAP Custom
+*/
 $breakpoints: (sm: 576, md: 768, lg: 992);
 $percent: (25, 50, 75, 100);
 $spacer: 1rem !default;
@@ -79,6 +95,11 @@ $spacer: 1rem !default;
         height: #{$p}%!important; 
       }
     }
+    .w-#{$b}-#{$p} {
+      @media (min-width: #{$s}px) { 
+        width: #{$p}%!important; 
+      }
+    }
   }
 }
 
@@ -86,4 +107,7 @@ $spacer: 1rem !default;
 //padding-top 2rem
 .pt-4-5 {
   padding-top: ($spacer * 2)!important;
+}
+.mt-4-5 {
+  margin-top: ($spacer * 2)!important;
 }

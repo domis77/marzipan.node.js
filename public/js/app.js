@@ -78,11 +78,12 @@ function switchPage( page ) {
   var that = this;
   if( this.translate ) {
     $(this.tmpCurrentView.el).addClass(this.translate);
+    $(this.tmpCurrentView.el).addClass('container-fluid');
     $(this.tmpCurrentView.el).addClass(this.slide);
 
     $(this.tmpCurrentView.el).one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function() {
       that.currentView.close();
-      $(that.tmpCurrentView.el).removeClass(that.translate).removeClass(that.slide);
+      $(that.tmpCurrentView.el).removeClass(that.translate).removeClass(that.slide).removeClass('container-fluid');
       that.currentView = that.tmpCurrentView;
 
       $(this).off('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd');

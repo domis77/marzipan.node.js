@@ -10,7 +10,6 @@
 .closed {
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  /*animation-direction: normal;*/
   animation-direction: reverse;
   animation-name: menu-close; }
 
