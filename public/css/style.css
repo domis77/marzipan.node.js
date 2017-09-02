@@ -45,6 +45,47 @@
 #en:active {
   border-bottom: 1px solid blue; }
 
+.open {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-name: menu-open; }
+
+@keyframes menu-open {
+  100% {
+    left: 0px; } }
+.closed {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-direction: reverse;
+  animation-name: menu-close; }
+
+@keyframes menu-close {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); } }
+.rotated {
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-name: menuIcon-rotate; }
+
+@keyframes menuIcon-rotate {
+  100% {
+    transform: rotate(90deg); } }
+.unrotated {
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-direction: reverse;
+  animation-name: menuIcon-unrotate; }
+
+@keyframes menuIcon-unrotate {
+  100% {
+    transform: rotate(90deg); } }
 html, body {
   margin: 0;
   width: 100%;
@@ -589,6 +630,9 @@ body {
     @media (max-width: 767px) {
       .contact .copyright p {
         font-size: 16px; } }
+  .contact .modal-content > p {
+    font-family: 'Verdana';
+    color: #FCC672; }
 
 /*
 //--BOOTSTRAP Custom

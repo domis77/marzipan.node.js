@@ -6,8 +6,6 @@ var menuView = new MenuView(currentViewModel);
 
 
 
-
-
 currentViewModel.on( "change:templatePage change:lang", function() {
   viewController();
 });
@@ -77,13 +75,15 @@ function switchPage( page ) {
 
   var that = this;
   if( this.translate ) {
-    $(this.tmpCurrentView.el).addClass(this.translate);
-    $(this.tmpCurrentView.el).addClass('container-fluid');
-    $(this.tmpCurrentView.el).addClass(this.slide);
+    $(this.tmpCurrentView.el).addClass(this.translate)
+                              .addClass('container-fluid')
+                              .addClass(this.slide);
 
     $(this.tmpCurrentView.el).one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function() {
       that.currentView.close();
-      $(that.tmpCurrentView.el).removeClass(that.translate).removeClass(that.slide).removeClass('container-fluid');
+      $(that.tmpCurrentView.el).removeClass(that.translate)
+                                .removeClass(that.slide)
+                                .removeClass('container-fluid');
       that.currentView = that.tmpCurrentView;
 
       $(this).off('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd');
@@ -93,114 +93,3 @@ function switchPage( page ) {
     that.currentView = that.tmpCurrentView;
   }
 }
-
-
-//-----TEST-AWS-SDK--->
-
-// var creds = new AWS.Credentials("AKIAJLKJGZDPWMQIKWJQ", "JhF195fHpcYBD6pvzziQrj+Ad7NL7comg5bz7iEC", "null");
-// // console.log(creds);
-// var ses = new AWS.SES({credentials: creds, region: 'eu-west-1'});
-
-
-// /* The following example sends a formatted email: */
-
-//  var params = {
-//   Destination: {
-//    BccAddresses: [
-//    ], 
-//    CcAddresses: [
-//       "dominix.sula@gmail.com"
-//    ], 
-//    ToAddresses: [
-//       "dominix.sula@gmail.com"
-//    ]
-//   }, 
-//   Message: {
-//    Body: {
-//     Html: {
-//      Charset: "UTF-8", 
-//      Data: "This message body contains HTML formatting. It can, for example, contain links like this one: <a class=\"ulink\" href=\"http://docs.aws.amazon.com/ses/latest/DeveloperGuide\" target=\"_blank\">Amazon SES Developer Guide</a>."
-//     }, 
-//     Text: {
-//      Charset: "UTF-8", 
-//      Data: "This is the message body in text format."
-//     }
-//    }, 
-//    Subject: {
-//     Charset: "UTF-8", 
-//     Data: "Test email"
-//    }
-//   }, 
-//   ReplyToAddresses: [
-//   ], 
-//   ReturnPath: "", 
-//   ReturnPathArn: "", 
-//   Source: "sender@example.com", 
-//   SourceArn: ""
-//  };
-//  ses.sendEmail(params, function(err, data) {
-//    if (err) console.log(err, err.stack); // an error occurred
-//    else     console.log(data);           // successful response
-//    /*
-//    data = {
-//     MessageId: "EXAMPLE78603177f-7a5433e7-8edb-42ae-af10-f0181f34d6ee-000000"
-//    }
-//    */
-//  });
-
-
-// console.log(ses);
-
-// var params = {
-//   Destination: { /* required */
-//     BccAddresses: [
-//       'dominix.sula@gmail.com'
-//       /* more items */
-//     ],
-//     CcAddresses: [
-//       'dominix.sula@gmail.com'
-//       /* more items */
-//     ],
-//     ToAddresses: [
-//       'dominix.sula@gmail.com'
-//       /* more items */
-//     ]
-//   },
-//   Message: { /* required */
-//     Body: { /* required */
-//       Html: {
-//         Data: 'Test email data. CONTENT', /* required */
-//         Charset: ''
-//       },
-//       Text: {
-//         Data: 'Test email data. CONTENT.', /* required */
-//         Charset: ''
-//       }
-//     },
-//     Subject: { /* required */
-//       Data: 'Message from homepage', /* required */
-//       Charset: ''
-//     }
-//   },
-//   Source: 'dominix.sula@gmail.com', /* required */
-//   ConfigurationSetName: '',
-//   ReplyToAddresses: [
-//     'dominix.sula@gmail.com'
-//     /* more items */
-//   ],
-//   ReturnPath: '',
-//   ReturnPathArn: '',
-//   SourceArn: '',
-//   Tags: [
-//     {
-//       Name: 'Message-from-homepage', /* required */
-//       Value: 'Message-from-homepage' /* required */
-//     }
-//   ]
-// };
-// ses.sendEmail(params, function(err, data) {
-//   if (err) console.log(err, err.stack); // an error occurred
-//   else     console.log(data);           // successful response
-// });
-
-//--TEST-AWS-SDK-----<

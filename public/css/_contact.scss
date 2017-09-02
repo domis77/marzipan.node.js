@@ -141,13 +141,20 @@
       // margin: 0 auto;
       // Small devices (landscape phones, 576px and up)
 
-// Medium devices (tablets, less than 992px)
-@media (max-width: 991px) { font-size: 18px; }
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767px) { font-size: 16px; }
-      font-family: 'Verdana';
-      font-size: 12px;
-      color: #9aa1ad;
+  // Medium devices (tablets, less than 992px)
+  @media (max-width: 991px) { font-size: 18px; }
+  // Small devices (landscape phones, less than 768px)
+  @media (max-width: 767px) { font-size: 16px; }
+        font-family: 'Verdana';
+        font-size: 12px;
+        color: #9aa1ad;
+      }
     }
+
+  //Confirm email-sent PopUp
+  .modal-content > p {
+    font-family: 'Verdana';
+    color: #FCC672;
   }
+  
 }

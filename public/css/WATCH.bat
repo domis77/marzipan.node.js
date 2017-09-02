@@ -1,1 +1,1 @@
-sass --watch style.scss:style.css animations.scss:animations.css
+sass --watch style.scss:style.css

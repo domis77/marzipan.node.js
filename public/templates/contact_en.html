@@ -11,20 +11,20 @@
 </section>
 
 <section class = "contactFormSection container mt-3">
-  <form class = "contactForm" method="GET" enctype="text/plain">
+  <form class = "contactForm" action="/email" method="post">
     <div class = "form-row justify-content-center">
       <div class = "col col-md-8 col-lg-4 ">
-        <input class = "input form-control" id = "nameInput" type = "text" name = "subject" placeholder = "Name" formmethod = "post">
+          <input class = "input form-control" id = "nameInput" type = "text" name = "name" placeholder = "Name" formmethod = "post" required>  
       </div>
     </div>
     <div class = "form-row justify-content-center pt-2">
       <div class = "col col-md-8 col-lg-4">
-        <input class = "input form-control" id = "emailInput" type = "email" name = "email" placeholder = "E-mail" formmethod = "post">
+        <input class = "input form-control" id = "emailInput" type = "email" name = "email" placeholder = "E-mail" formmethod = "post" required>
       </div>
     </div>
     <div class = "form-row justify-content-center pt-2">
       <div class = "col col-md-8 col-lg-4">
-        <textarea class = "input form-control" id = "messageInput" name = "body" rows = "6" placeholder = "Message" formmethod = "post"></textarea>
+        <textarea class = "input form-control" id = "messageInput" name = "message" rows = "6" placeholder = "Message" formmethod = "post" required></textarea>
       </div>
     </div>
     <div class = "form-row justify-content-center pt-2">
@@ -37,6 +37,16 @@
     </div>
   </form>
 </section>
+
+<!-- Confirm email-sent PopUp -->
+<div class="modal fade" id="emailSentPopUp" tabindex="-1" role="dialog" aria-labelledby="sallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <p class = "text-center">Your message has been sent</p>
+    </div>
+  </div>
+</div>
+<!-- PopUp  -->
 
 <section class = "contactFooter mt-lg-2 mt-5">
   <div class = "row justify-content-center no-gutters">
@@ -65,7 +75,7 @@
     </div>
 
     <div class = "col col-lg-1">
-      <div id = "twitterIcon" class = "w-50 mx-auto">
+      <div id = "twitterIcon" class = "w-50 mr-auto mx-lg-auto">
         <a target = "_blank" href = "https://twitter.com/MarcellBull" class = "socialMediaIcon">
           <img src = "img/twitter.png" class = "img-fluid">
         </a>
@@ -79,3 +89,5 @@
     <p class="text-center">©marzipan 2017 </p>
   </div>
 </section>
+
+

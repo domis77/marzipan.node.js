@@ -14,6 +14,13 @@ ContactView = Backbone.View.extend({
 
     $('.currentView').append(this.el);
 
+    $('#sendButton').click(function(){
+      if( $('#nameInput').val() != '' &&
+          $('#emailInput').val().includes('@') &&
+          $('#messageInput').val() != '') {
+        $('#emailSentPopUp').modal('toggle')
+      }
+    });
 
     return this;
   },
