@@ -45,6 +45,7 @@
     "icon" : "projects/video/lesJournees/1.png",
     "description_en" : "Vidéo réalisée à l’occassion du première édition d’événement culturel « Les Journées de l’art slave » qui avait lié à Strasbourg, pendant le weekend du 12-13 mars 2016. Principalement, cette action est organisée par L’Association Culturelle Russe de Strasbourg en étroite collaboration avec Le Consulat Général de la Fédération de Russie à Strasbourg et un autre l’association culturelle strasbourgois, Art Radouga. Pendant ce court vidéo je montre le programme riche en prestations culturelles différentes, proposées au publique strasbourgois pendant ce deux jours.",
     "description_fr" : "Vidéo réalisée à l’occassion du première édition d’événement culturel « Les Journées de l’art slave » qui avait lié à Strasbourg, pendant le weekend du 12-13 mars 2016. Principalement, cette action est organisée par L’Association Culturelle Russe de Strasbourg en étroite collaboration avec Le Consulat Général de la Fédération de Russie à Strasbourg et un autre l’association culturelle strasbourgois, Art Radouga. Pendant ce court vidéo je montre le programme riche en prestations culturelles différentes, proposées au publique strasbourgois pendant ce deux jours.",
+    "icons" : [],
     "img" : [
       {
         "id" : "0",
@@ -75,7 +76,8 @@
     "icon" : "projects/illustration/caractere_illustration/1.png",
     "description_en" : "Les illustration faites pour le projet personnel. Les caractères réalisées à partir des esquisses, ensuite colorées dans Photoshop.",
     "description_fr" : "Les illustration faites pour le projet personnel. Les caractères réalisées à partir des esquisses, ensuite colorées dans Photoshop.",
-    "imgCustom" : [
+    "icons" : [],    
+    "img" : [
       {
         "id" : "0",
         "patch" : "projects/illustration/caractere_illustration/2.png"
@@ -139,13 +141,18 @@
     "icon" : "projects/illustration/portraits/1.png",
     "description_en" : "Les portraits réalisés avec de techniques traditionels, comme les pastels secs ou crayons colorés. Photoshop utilisé pour certains dans le but d’avoir des différéntes d’effets visuels.",
     "description_fr" : "Les portraits réalisés avec de techniques traditionels, comme les pastels secs ou crayons colorés. Photoshop utilisé pour certains dans le but d’avoir des différéntes d’effets visuels.",
+    "icons" : [],    
     "img" : [
       {
         "id" : "0",
-        "patch" : "projects/illustration/portraits/2.png"
+        "patch" : "projects/illustration/portraits/1.png"
       },
       {
         "id" : "1",
+        "patch" : "projects/illustration/portraits/2.png"
+      },
+      {
+        "id" : "2",
         "patch" : "projects/illustration/portraits/3.png"
       }
     ],
@@ -160,6 +167,7 @@
     "icon" : "projects/graphics/meridienne/1.jpg",
     "description_en" : "Le logo, les trois affiches et le programme réalisés pour le théâtre La Méridienne à Lunéville. Le premier logo et les affiches représentent un ensemble. Le livret du programme est composé à la base d’un autre logo proposé.",
     "description_fr" : "Le logo, les trois affiches et le programme réalisés pour le théâtre La Méridienne à Lunéville. Le premier logo et les affiches représentent un ensemble. Le livret du programme est composé à la base d’un autre logo proposé.",
+    "icons" : [],    
     "img" : [
       {
         "id" : "0",
@@ -213,6 +221,7 @@
     "icon" : "projects/graphics/pocket_book/1.png",
     "description_en" : "Une série de couvertures des livres dans l’édition spécial, nommée « Livre de poche ». La conception graphique basée sur des vraies instalations des objets et matières et ensuite prises en photo et corrigés légérement dans Photoshop. Les couleurs de typographie adaptés aux couleurs de compositions photographiques.",
     "description_fr" : "Une série de couvertures des livres dans l’édition spécial, nommée « Livre de poche ». La conception graphique basée sur des vraies instalations des objets et matières et ensuite prises en photo et corrigés légérement dans Photoshop. Les couleurs de typographie adaptés aux couleurs de compositions photographiques.",
+    "icons" : [],    
     "img" : [
       {
         "id" : "0",
@@ -241,12 +250,13 @@
   },
 
   {
-    "id" : "9",
+    "id" : "7",
     "title" : "Area 52",
     "icon" : "projects/graphics/area52/1.png",
     "description_en" : "Création d’une pochette vinyle, recto verso, d’une pochette intérieur et pour le disque titré « Area 52 » d’un duo méxicaine Rodrigo y Gabriela. Les couleurs chaudes, la guitare et les silhouetes floues reflètent l’ambiance de la musique de ce disque. Le projet universitaire.",
     "description_fr" : "Création d’une pochette vinyle, recto verso, d’une pochette intérieur et pour le disque titré « Area 52 » d’un duo méxicaine Rodrigo y Gabriela. Les couleurs chaudes, la guitare et les silhouetes floues reflètent l’ambiance de la musique de ce disque. Le projet universitaire.",
-    "imgCustom" : [
+    "icons" : [],    
+    "img" : [
       {
         "id" : "0",
         "patch" : "projects/graphics/area52/2.png"
