@@ -144,8 +144,8 @@
   background: url("../img/wigleSprite.png");
   margin: 0 auto; }
 
-.grid {
-  overflow-y: scroll; }
+.work {
+  background-color: white; }
 
 /*--------------------------------CLOSED PROJECT------------------------------->*/
 .grid-item .content .greyscale {
@@ -177,7 +177,14 @@
     .right .viewProjectButton {
       right: 5%; } }
 
-.viewProjectButton {
+.height-30vh {
+  height: 30vh; }
+
+.viewProjectButton:hover {
+  border: 2px solid black !important;
+  cursor: pointer; }
+
+.grid-item.hide .viewProjectButton {
   position: relative;
   background-color: white;
   top: -25%;
@@ -186,316 +193,46 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none; }
-  .viewProjectButton p {
+  .grid-item.hide .viewProjectButton p {
     font-family: 'Verdana'; }
 
-.viewProjectButton:hover {
-  border: 2px solid black;
-  cursor: pointer; }
-
 /*--------------------------------OPEN PROJECT--------------------------------->*/
-.grid-item.open .viewProjectButton {
+.grid-item.show .viewProjectButton {
   float: right !important;
-  right: 0%;
-  left: 0%; }
+  border: 1px solid;
+  background-color: white;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
+  .grid-item.show .viewProjectButton p {
+    font-family: 'Verdana'; }
 
 /*--------------------------------CATEGORIES TEMPLATES------------------------->*/
-.video-template {
-  height: 90%; }
-  .video-template .center {
-    width: 70%;
-    height: auto;
-    float: left; }
-    .video-template .center .icon {
-      width: 20%;
-      height: auto;
-      float: left; }
-      .video-template .center .icon img {
-        width: 100%;
-        height: auto; }
-    .video-template .center .title {
-      width: 75%;
-      height: auto;
-      float: right; }
-      .video-template .center .title h1 {
-        font-size: 2.4vh;
-        font-family: 'Verdana';
-        font-weight: bold;
-        margin: 0; }
-    .video-template .center .description {
-      width: 100%;
-      padding-top: 2%;
-      height: auto;
-      clear: both; }
-      .video-template .center .description p {
-        font-family: 'Verdana';
-        text-align: justify; }
-    .video-template .center .videos {
-      width: 100%;
-      height: auto;
-      margin-top: 5%; }
-      .video-template .center .videos .video {
-        width: 80%;
-        height: auto;
-        margin: 0 auto; }
-        .video-template .center .videos .video iframe {
-          width: 100%;
-          height: 300px; }
-  .video-template .images {
-    width: 30%;
-    height: auto;
-    margin-top: 5%;
-    float: right; }
-    .video-template .images .image {
-      width: 60%;
-      height: auto;
-      margin: 10% auto; }
-      .video-template .images .image img {
-        width: 100%;
-        height: auto; }
+.video-template .wraper .columnt-left .title h1 {
+  font-family: 'Verdana'; }
+.video-template .wraper .columnt-left .description p {
+  font-family: 'Verdana'; }
 
-.illustration-template .title {
-  width: 90%;
-  height: auto;
-  margin: 0 auto; }
-  .illustration-template .title h1 {
-    font-size: 2.5vh;
-    font-family: 'Verdana';
-    font-weight: bold; }
-.illustration-template .description {
-  width: 90%;
-  height: auto;
-  margin: 0 auto; }
-  .illustration-template .description p {
-    font-family: 'Verdana';
-    text-align: justify; }
-.illustration-template .images {
-  width: 80%;
-  height: auto;
-  margin: 0 auto; }
-  .illustration-template .images .image {
-    width: 27%;
-    height: auto;
-    float: left;
-    margin: 2% 2.1%; }
-    .illustration-template .images .image img {
-      width: 100%;
-      height: auto; }
+.illustration-template .title h1 {
+  font-family: 'Verdana'; }
+.illustration-template .description p {
+  font-family: 'Verdana'; }
 
-.graphics-template .header {
-  display: block;
-  width: 100%;
-  height: auto; }
-  .graphics-template .header .icon {
-    width: 15%;
-    float: left;
-    height: auto;
-    margin-left: 5%;
-    position: relative; }
-    .graphics-template .header .icon img {
-      width: 100%;
-      max-height: 100%;
-      height: auto;
-      margin: 0 auto; }
-  .graphics-template .header .title {
-    width: 70%;
-    height: auto;
-    float: right; }
-    .graphics-template .header .title h1 {
-      font-size: 2.5vh;
-      font-family: 'Verdana';
-      font-weight: bold; }
-  .graphics-template .header .description {
-    display: block;
-    height: auto;
-    margin: 0 auto;
-    width: 90%;
-    clear: both;
-    margin-top: 5%;
-    padding-top: 1%; }
-    .graphics-template .header .description p {
-      font-family: 'Verdana';
-      text-align: justify; }
-.graphics-template .images {
-  width: 100%;
-  height: auto; }
-  .graphics-template .images .icons {
-    width: 40%;
-    height: auto;
-    margin: 0 auto; }
-    .graphics-template .images .icons .icon {
-      width: 100%;
-      height: auto; }
-      .graphics-template .images .icons .icon img {
-        width: 100%;
-        height: auto; }
-  .graphics-template .images .first {
-    width: 100%;
-    height: auto;
-    clear: left; }
-    .graphics-template .images .first .image {
-      width: 35%;
-      height: auto;
-      margin-top: 5%;
-      float: left; }
-      .graphics-template .images .first .image img {
-        width: 100%;
-        height: auto; }
-    .graphics-template .images .first .image:first-child {
-      margin-left: 13%;
-      margin-right: 2%; }
-  .graphics-template .images .second {
-    width: 100%;
-    height: auto;
-    clear: left; }
-    .graphics-template .images .second .image {
-      width: 30%;
-      height: auto;
-      margin-top: 5%;
-      float: left; }
-      .graphics-template .images .second .image img {
-        width: 100%;
-        height: auto; }
-    .graphics-template .images .second .image:first-child {
-      margin-left: 19%;
-      margin-right: 1%; }
-.graphics-template .videos {
-  width: 100%;
-  height: auto;
-  clear: both;
-  padding-top: 5%; }
-  .graphics-template .videos .video {
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
-    margin-bottom: 5%; }
-    .graphics-template .videos .video iframe {
-      margin: 0 auto;
-      height: 300px;
-      width: 50%; }
+.graphics-template .header .title h4 {
+  font-family: 'Verdana'; }
+.graphics-template .header .description p {
+  font-family: 'Verdana'; }
 
-.caractere_illustration-template .header {
-  width: 90%;
-  height: 20%;
-  margin: 0 auto; }
-  .caractere_illustration-template .header .title {
-    width: 100%;
-    height: auto; }
-    .caractere_illustration-template .header .title h1 {
-      font-size: 2.5vh;
-      font-family: 'Verdana';
-      font-weight: bold; }
-  .caractere_illustration-template .header .description {
-    width: 100%;
-    height: auto; }
-    .caractere_illustration-template .header .description p {
-      font-family: 'Verdana';
-      text-align: justify; }
-.caractere_illustration-template .images {
-  width: 80%;
-  height: 80%;
-  margin: 0 auto;
-  margin-top: 5%; }
-  .caractere_illustration-template .images .green {
-    width: 40%;
-    height: 100%;
-    float: left;
-    position: relative; }
-    .caractere_illustration-template .images .green .background {
-      float: right;
-      width: 95%;
-      height: 80%;
-      margin-top: 25%;
-      background-color: rgba(72, 112, 26, 0.8); }
-    .caractere_illustration-template .images .green .image {
-      float: left;
-      width: 50%;
-      height: auto;
-      position: absolute; }
-      .caractere_illustration-template .images .green .image img {
-        width: 100%;
-        height: auto; }
-    .caractere_illustration-template .images .green .sketch {
-      width: 40%;
-      height: auto;
-      position: absolute;
-      margin-left: 58%;
-      margin-top: 15%; }
-      .caractere_illustration-template .images .green .sketch img {
-        width: 100%;
-        height: auto; }
-  .caractere_illustration-template .images .blue {
-    width: 40%;
-    height: 100%;
-    float: right;
-    position: relative; }
-    .caractere_illustration-template .images .blue .background {
-      float: right;
-      width: 95%;
-      height: 80%;
-      margin-top: 25%;
-      background-color: rgba(150, 219, 252, 0.8); }
-    .caractere_illustration-template .images .blue .image {
-      float: left;
-      width: 50%;
-      height: auto;
-      position: absolute; }
-      .caractere_illustration-template .images .blue .image img {
-        width: 100%;
-        height: auto; }
-    .caractere_illustration-template .images .blue .sketch {
-      width: 40%;
-      height: auto;
-      position: absolute;
-      margin-left: 58%;
-      margin-top: 15%; }
-      .caractere_illustration-template .images .blue .sketch img {
-        width: 100%;
-        height: auto; }
+.caractere_illustration-template .header .title h4 {
+  font-family: 'Verdana'; }
+.caractere_illustration-template .header .description p {
+  font-family: 'Verdana'; }
 
-.area52-template .header {
-  width: 90%;
-  height: auto; }
-  .area52-template .header .title {
-    width: 100%;
-    height: auto; }
-    .area52-template .header .title h1 {
-      font-size: 2.5vh;
-      font-family: 'Verdana';
-      font-weight: bold; }
-  .area52-template .header .description {
-    width: 100%;
-    height: auto; }
-    .area52-template .header .description p {
-      font-family: 'Verdana';
-      text-align: justify; }
-.area52-template .icon {
-  width: 100%; }
-  .area52-template .icon img {
-    width: 50%;
-    height: auto;
-    margin: 0 auto; }
-.area52-template .images {
-  width: 100%; }
-  .area52-template .images .left {
-    width: 40%;
-    height: 55%;
-    position: relative;
-    float: left;
-    margin-left: 10%; }
-    .area52-template .images .left img {
-      width: 100%;
-      height: auto; }
-  .area52-template .images .right {
-    width: 40%;
-    height: 55%;
-    position: relative;
-    float: left;
-    margin-top: 5%;
-    right: 5%; }
-    .area52-template .images .right img {
-      width: 100%;
-      height: auto; }
+.area52-template .header .title h4 {
+  font-family: 'Verdana'; }
+.area52-template .header .description p {
+  font-family: 'Verdana'; }
 
 .about {
   background-color: white; }

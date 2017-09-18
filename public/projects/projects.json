@@ -3,7 +3,7 @@
     "id" : "0",
     "title" : "Jazzy Estonie & Elsass Groove",
     "icon" : "projects/graphics/jazzy_estonie/1.png",
-    "description_en" : "Une affiche A3 et le flyer A6 recto verso réalisées pour le concert de musiciens estoniens et alsaciens. La commande pour la Ministère de la Culture d’Estonie dans la cadre de la Présidence de l’Estonie au Conseil de l’Europe en May-Novembre 2016. Les couleurs principales sur l’affiche font l’appel aux couleurs du drapeau d’estoniens ; bleu, noir et blanc. La cigogne, le symbole de l’Alsace, rappele une contribution de musiciens alsaciens dans cet événement culturel.",
+    "description_en" : "Unee affiche A3 et le flyer A6 recto verso réalisées pour le concert de musiciens estoniens et alsaciens. La commande pour la Ministère de la Culture d’Estonie dans la cadre de la Présidence de l’Estonie au Conseil de l’Europe en May-Novembre 2016. Les couleurs principales sur l’affiche font l’appel aux couleurs du drapeau d’estoniens ; bleu, noir et blanc. La cigogne, le symbole de l’Alsace, rappele une contribution de musiciens alsaciens dans cet événement culturel.",
     "description_fr" : "Une affiche A3 et le flyer A6 recto verso réalisées pour le concert de musiciens estoniens et alsaciens. La commande pour la Ministère de la Culture d’Estonie dans la cadre de la Présidence de l’Estonie au Conseil de l’Europe en May-Novembre 2016. Les couleurs principales sur l’affiche font l’appel aux couleurs du drapeau d’estoniens ; bleu, noir et blanc. La cigogne, le symbole de l’Alsace, rappele une contribution de musiciens alsaciens dans cet événement culturel.",
     "icons" : [
       {
@@ -32,7 +32,7 @@
     "video" : [
       {
         "id" : "0",
-        "patch" : "<iframe src='https://www.youtube.com/embed/tIG30e54txE' frameborder='0' allowfullscreen></iframe>"
+        "patch" : "https://www.youtube.com/embed/tIG30e54txE"
       }
     ],
     "category" : "graphics",
@@ -63,7 +63,7 @@
     "video" : [
       {
         "id" : "0",
-        "patch" : "<iframe src='https://www.youtube.com/embed/p4G1JJKfT70' frameborder='0' allowfullscreen></iframe>"
+        "patch" : "https://www.youtube.com/embed/p4G1JJKfT70"
       }
     ],
     "category" : "video",
@@ -85,10 +85,6 @@
       {
         "id" : "1",
         "patch" : "projects/illustration/caractere_illustration/3.png"
-      },
-      {
-        "id" : "2",
-        "patch" : "projects/illustration/caractere_illustration/4.png"
       }
     ],
     "video" : [],
@@ -260,10 +256,6 @@
       {
         "id" : "0",
         "patch" : "projects/graphics/area52/2.png"
-      },
-      {
-        "id" : "1",
-        "patch" : "projects/graphics/area52/3.png"
       }
     ],
     "video" : [],

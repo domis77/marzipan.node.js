@@ -1,0 +1,19 @@
+<div class = "header row">
+  <div class = "title col-12">
+    <h4><%= title %></h4>
+  </div>
+  <div class = "description col-12 pt-4">
+    <p class = "text-justify"><% if( lang == 'fr') { %> <%= description_fr %> <% } else { %> <%= description_en %> <% } %></p>
+  </div>
+</div>
+
+<div class = "images row justify-content-center">
+  <div class = "icon collg-7 col-md-8 col-12">
+    <img src = <%= icon %> class="img-fluid">
+  </div>
+  <% _.each(img, function(elem){ %>
+    <div class = "image id<%= elem.id %> col-lg-10 col-md-11 col-12">
+      <img id = <%= elem.id %> src = <%= elem.patch %> class="img-fluid">  
+    </div> 
+  <% }) %>
+</div>
