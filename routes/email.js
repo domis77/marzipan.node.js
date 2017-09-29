@@ -7,7 +7,7 @@ var ses = new AWS.SES({region: 'eu-west-1', apiVersion: '2010-12-01'});
 
 
 router.post('/', function(req, res, next) {
-  const myEmail = 'dominix.sula@gmail.com';
+  const myEmail = 'rawmarzipan@gmail.com';
 
   var message = "<h1>From:</h1><h3>Name: " + req.body.name
                     + "</h3><h3>Email: " + req.body.email
