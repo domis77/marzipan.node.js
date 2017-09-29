@@ -22,8 +22,7 @@ module.exports = function() {
                     res.type(data.ContentType);
                     res.send(data.Body.toString('base64'));
                 }               
-                else console.log('other content type');
-                
+                else console.log('other content type');    
             }
         });
     }
