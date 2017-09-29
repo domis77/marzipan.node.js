@@ -126,26 +126,35 @@
 .mainPage {
   background-color: white; }
 
-.categories p {
-  font-family: 'Poiret One', sans-serif; }
-.categories .category:hover {
-  cursor: pointer; }
-.categories .wiggle.hover,
-.categories .category-wrapper:hover > .wiggle {
-  cursor: pointer;
-  animation: wiggle 0.1s steps(1);
-  animation-fill-mode: forwards; }
+.categories {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 1030; }
+  .categories p {
+    font-family: 'Poiret One', sans-serif; }
+  .categories .category:hover {
+    cursor: pointer; }
+  .categories .wiggle.hover,
+  .categories .category-wrapper:hover > .wiggle {
+    cursor: pointer;
+    animation: wiggle 0.1s steps(1);
+    animation-fill-mode: forwards; }
 @keyframes wiggle {
   100% {
     background-position: 100%; } }
-.categories .wiggle {
-  width: 52px;
-  height: 19px;
-  background: url("../img/wigleSprite.png");
-  margin: 0 auto; }
+  .categories .wiggle {
+    width: 52px;
+    height: 19px;
+    background: url("../img/wigleSprite.png");
+    margin: 0 auto; }
 
 .work {
   background-color: white; }
+
+.grid {
+  overflow: hidden; }
 
 /*--------------------------------CLOSED PROJECT------------------------------->*/
 .grid-item .content .greyscale {

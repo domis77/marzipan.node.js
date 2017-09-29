@@ -6,6 +6,7 @@ ProjectModel = Backbone.Model.extend({
     icon : '',
     description_en : '',
     description_fr : '',
+    icons: '',
     img : '',
     video : '',
     category : '',

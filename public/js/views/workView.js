@@ -7,44 +7,55 @@ WorkView = Backbone.View.extend({
     var template = currentViewModel.get( "template" );
 
     var gridSection = $('<section class="grid row justify-content-center"></section>');  
-    this.collection = new ProjectCollection();  
-    this.collection.fetch({
-      async: false,
-      success: function() {
-        that.collection.each( function( project ) {
-          gridSection.append( template(project.toJSON()) );
-        }, that);
-      }
-    });
+    $('.loading-spiner').toggle();
     
-    this.render(template, gridSection);
+    this.callS3('projects.json').then(function(data) {
+      return collection = new ProjectCollection(JSON.parse(data));   
+    }).then(function(collection) {
+      collection.each(function(project) {
+        gridSection.append(template(project.toJSON()));
+      })
+      that.render(gridSection, collection);   
+    })
   },
   
-  render : function(template, gridSection) {
+  render : function(gridSection, collection) {
+    var that = this;
+
+    $('.loading-spiner').toggle();
     $(this.el).addClass("work");
 
-    this.$el.append(gridSection);
     this.addCategorySort(this.$el);
+    this.$el.append(gridSection);
 
     $('.currentView').append(this.el);
-    this.styledGrid(gridSection.children());
 
-    this.listenProjectsOverview(gridSection);
+    that.styledGrid(gridSection.children());    
+    this.styleCategoryBar();
 
+    this.listenProjectsOverview(gridSection, collection);
     return this;
   },
 //----------------------------------------------------------------------------->
+  callS3 : function(object) {
+    return new Promise(function(resolve, reject) {
+        $.get('/s3', { key: object }, function(data, status, response) {
+          resolve(data);
+      })
+    });
+  },
 
   addCategorySort : function( el ) {
     var that = this;
-    var workCategory = "templates/workCategory_" + document.documentElement.lang + ".html";
+    var workCategoryPatch = "templates/workCategory_" + document.documentElement.lang + ".html";
 
-    getHtml(workCategory).done(function(workCategory) {
+    getHtml(workCategoryPatch).done(function(workCategory) {
       if($('.currentView').find('.categories').length != 0) {
         $('.categories').remove();
       }
       el.prepend(workCategory);
-      
+    
+
       $('.categories').on("click touchend", ".category, .wiggle", function () {
         if($('.wiggle').hasClass('hover')) {
           $('.wiggle').removeClass('hover');
@@ -54,32 +65,42 @@ WorkView = Backbone.View.extend({
         $(this).addClass('hover');
        
         if (filterValue == "*") {
-          $(".grid-item").show('1000');
+          $('.grid-item').show('1000', function() {
+            that.styledGrid($(".grid-item").filter(filterValue));            
+          });
         }
         else {         
-          $(".grid-item").not(filterValue).hide('3000');
-          $(".grid-item").filter(filterValue).show('3000');
+          $('.grid-item').not(filterValue).hide('3000', function() {
+            that.styledGrid($(".grid-item").filter(filterValue));
+          });
+          $('.grid-item').filter(filterValue).show('3000');
         }
-
-        that.styledGrid($(".grid-item").filter(filterValue));
       });
     });
   },
 
-  styledGrid : function( $grid ) {
-    $grid.each( function(index, element) {
+  styledGrid : function( $grid ) {   
+    $grid.each(function (index, element) {
       $(element).hasClass('left') ? $(element).removeClass('left') : null;
-      $(element).hasClass('right') ? $(element).removeClass('right') : null;         
-      
-      if( !$(element).hasClass('show') ) {    
-        ( $(element).offset().left == 0 ) ? $(element).addClass('left') : $(element).addClass('right');
+      $(element).hasClass('right') ? $(element).removeClass('right') : null;
+
+      var paddingLeft = parseInt($(element).css('padding-left'));
+      if (!$(element).hasClass('show')) {
+        ($(element).position().left <= 0) ? $(element).addClass('left') : $(element).addClass('right');
       }
+    });
+  },
+  
+  styleCategoryBar : function() {
+    $(document).one('scroll', function() {     
+      $('.categoryGutter').height($('.categories').height())
+      $('.categories').addClass('pb-1');
     });
   },
 
 
 
-  listenProjectsOverview : function( $grid ) {
+  listenProjectsOverview : function( $grid, collection ) {
     var that = this;
 
     $('.viewProjectButton').hover( function(element) { 
@@ -110,24 +131,22 @@ WorkView = Backbone.View.extend({
 
 
       if( projectItem.hasClass("show") ) {
-        that.showProjectElements( projectItem );
+        that.showProjectElements( projectItem, collection );
       }
       else {
         that.hideProjectElements( projectItem );
       }
 
       $('html, body').animate({
-        scrollTop: projectItem.offset().top - $('.menu').height()
+        scrollTop: projectItem.offset().top - $('.menu').height() - $('.categoryGutter').height()
       }, '1000');
 
       that.styledGrid( $('.grid').children() );
     });
-
-
   },
 
-  showProjectElements : function( $projectItem ) {
-    var projectData = this.collection.models[$projectItem.index()].attributes;
+  showProjectElements : function( $projectItem, collection  ) {
+    var projectData = collection.models[$projectItem.index()].attributes;
     projectData.lang = currentViewModel.get("lang");
     
     var templatePatch = "templates/projectsTemplates/" + projectData.template + ".html";
@@ -141,14 +160,10 @@ WorkView = Backbone.View.extend({
       contentSection.addClass(projectData.template + "-template");
     })
   },
-
+ 
   hideProjectElements : function( $projectItem ) {
     $projectItem.find('.content').children().not(':first').remove();
   },
-
-
-
-
 
   close : function() {
     this.remove();
@@ -156,10 +171,3 @@ WorkView = Backbone.View.extend({
     this.unbind();
   },
 });
-
-
-/* TODO
--sticky category bar
--paski scrollowania
--S3
-*/

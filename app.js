@@ -11,6 +11,7 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 */
 var email = require('./routes/email');
+var s3 = require('./routes/s3');
 
 
 var app = express();
@@ -35,6 +36,8 @@ app.use('/', express.static(__dirname + '/public'));
 app.use("/", express.static(__dirname));
 
 app.use('/email', email);
+app.use('/s3', s3());
+
 
 /* >From express-generator 
 app.use('/', index);

@@ -10,7 +10,7 @@ MenuRouter = Backbone.Router.extend ({
   initialize: function() {
   },
 
-  callTemplate : function( templateName ) {
+  callTemplate : function( templateName ) {   
     if( templateName === null) {
       templateName = "mainPage";
     }

@@ -1,12 +1,16 @@
 var pageList = ["mainPage", "work", "about", "contact"];
 //----------------------------------------------------------------------------->
-
 var currentViewModel = new CurrentViewModel();
 var menuView = new MenuView(currentViewModel);
+var currentView = undefined;
+var tmpCurrentView = undefined;
 
 
 
 currentViewModel.on( "change:templatePage change:lang", function() {
+  if(tmpCurrentView) {
+    ($(tmpCurrentView).is(':animated')) ? currentView.close() : null;
+  }
   viewController();
 });
 
@@ -38,14 +42,16 @@ Backbone.history.start();
 function viewController() {
   currentViewModel.getTemplate().done( function( template ) {
     currentViewModel.set({ template: _.template(template) });
+    
     switchPage( currentViewModel.get( "templatePage" ) );
   });
 };
 
 
-function switchPage( page ) {
-  if( this.currentView ) {
-    if( pageList.indexOf(page) > pageList.indexOf(this.currentView.el.className) ) {
+function switchPage( page ) {  
+  if( currentView ) {   
+    // if( pageList.indexOf(page) > pageList.indexOf(this.currentView.el.classList[0]) ) {
+      if( pageList.indexOf(page) > pageList.indexOf(currentView.el.classList[0]) ) {
       this.translate = "translateRight";
       this.slide = "slideLeft";
     }
@@ -57,39 +63,43 @@ function switchPage( page ) {
 
   switch (page) {
     case "mainPage":
-      this.tmpCurrentView  = new MainPageView();
+      tmpCurrentView  = new MainPageView();
     break;
 
     case "work":
-      this.tmpCurrentView  = new WorkView();
+      tmpCurrentView  = new WorkView();
     break;
 
     case "about":
-      this.tmpCurrentView  = new AboutView();
+      tmpCurrentView  = new AboutView();
     break;
 
     case "contact":
-      this.tmpCurrentView = new ContactView();
+      tmpCurrentView = new ContactView();
     break;
   };
+ 
 
-  var that = this;
+  var that = this;  
   if( this.translate ) {
-    $(this.tmpCurrentView.el).addClass(this.translate)
+    $(tmpCurrentView.el).addClass(this.translate)
                               .addClass('container-fluid')
                               .addClass(this.slide);
 
-    $(this.tmpCurrentView.el).one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function() {
-      that.currentView.close();
-      $(that.tmpCurrentView.el).removeClass(that.translate)
+    $(tmpCurrentView.el).one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function() {
+      // that.currentView.close();
+      currentView.close();
+      $(tmpCurrentView.el).removeClass(that.translate)
                                 .removeClass(that.slide)
                                 .removeClass('container-fluid');
-      that.currentView = that.tmpCurrentView;
+  // that.currentView = tmpCurrentView; 
+      currentView = tmpCurrentView;
 
       $(this).off('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd');
     });
   }
   else {
-    that.currentView = that.tmpCurrentView;
+    // that.currentView = tmpCurrentView;
+    currentView = tmpCurrentView;
   }
 }
