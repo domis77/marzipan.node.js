@@ -36,7 +36,7 @@ WorkView = Backbone.View.extend({
     this.listenProjectsOverview(gridSection, collection);
     return this;
   },
-//----------------------------------------------------------------------------->
+//---------------------------------------------------------------------------->
   callS3 : function(object) {
     return new Promise(function(resolve, reject) {
         $.get('/s3', { key: object }, function(data, status, response) {
