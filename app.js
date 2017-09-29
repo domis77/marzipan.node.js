@@ -20,10 +20,16 @@ app.set('view engine', 'jade');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+
+// app.use(express.static(path.join(__dirname, 'public')));   >--DEV--<
+app.use(express.static(path.join(__dirname, 'build')));
 
 // Add for static serve
-app.use('/', express.static(__dirname + '/public'));
+// app.use('/', express.static(__dirname + '/public'));   >--DEV--<
+// app.use("/", express.static(__dirname));    >--DEV--<
+
+
+app.use('/', express.static(__dirname + '/build'));
 app.use("/", express.static(__dirname));
 
 app.use('/email', email);

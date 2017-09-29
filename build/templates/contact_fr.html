@@ -1,0 +1,93 @@
+<section class = "header container">
+  <div class = "row justify-content-center">
+    <p class = "col-10 col-lg-7 text-center">Contactez-moi pour les réalisations d’un logo, d’une identité visuelle, une newsletter, des affiches, des flyers, des livrets, des catalogues, des illustrations, d’un montage de vidéo, mais aussi pour d’autres projets.</p>
+  </div>
+  <div class = "row justify-content-center">
+    <h6 class="text-center col col-lg-8">VENEZ AVEC VOS IDÉES, JE FERAI TOUT POUR QU’ELLES SE MATERIALISENT !</h6>
+  </div>
+  <div class = "row justify-content-center pt-3"> 
+    <h6 class="text-center col col-lg-8">VENEZ SANS IDÉES, ON VA LES TROUVER ENSEMBLE !</h6>
+  </div>
+</section>
+
+<section class = "contactFormSection container mt-3">
+  <form class = "contactForm" action="/email" method="post">
+    <div class = "form-row justify-content-center">
+      <div class = "col col-md-8 col-lg-4 ">
+          <input class = "input form-control" id = "nameInput" type = "text" name = "name" placeholder = "Nom" formmethod = "post" required>  
+      </div>
+    </div>
+    <div class = "form-row justify-content-center pt-2">
+      <div class = "col col-md-8 col-lg-4">
+        <input class = "input form-control" id = "emailInput" type = "email" name = "email" placeholder = "E-mail" formmethod = "post" required>
+      </div>
+    </div>
+    <div class = "form-row justify-content-center pt-2">
+      <div class = "col col-md-8 col-lg-4">
+        <textarea class = "input form-control" id = "messageInput" name = "message" rows = "6" placeholder = "Message" formmethod = "post" required></textarea>
+      </div>
+    </div>
+    <div class = "form-row justify-content-center pt-2">
+      <div class = "col-5 col-md-3 col-lg-2 pr-0">
+        <input class = "form-control h-100" id = "sendButton" type = "submit" value = "Envoyer">
+      </div>
+      <div class = "contactAnimation col-7 col-md-5 col-lg-2 pl-0">
+        <img src = "https://s3-eu-west-1.amazonaws.com/marzipan-projects/assets/contactAnimation.gif" class = "img-fluid" id = "contactAnimation">
+      </div>
+    </div>
+  </form>
+</section>
+
+<!-- Confirm email-sent PopUp -->
+<div class="modal fade" id="emailSentPopUp" tabindex="-1" role="dialog" aria-labelledby="sallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <p class = "text-center">Merci ! Votre message a bien été envoyé</p>
+    </div>
+  </div>
+</div>
+<!-- PopUp  -->
+
+<section class = "contactFooter mt-lg-2 mt-5">
+  <div class = "row justify-content-center no-gutters">
+    <div class = "col col-lg-1">
+      <div id = "behanceIcon" class = "w-75 mx-auto">
+        <a target = "_blank" href = "https://www.behance.net/MarcelinaS" class = "socialMediaIcon">
+          <img src = "https://s3-eu-west-1.amazonaws.com/marzipan-projects/assets/behance.png" class = "img-fluid">
+        </a>
+      </div>
+    </div>
+
+    <div class = "col col-lg-2">
+      <div  id = "flickrIcon" class = "w-lg-50 mx-auto mt-2">
+        <a target = "_blank" href = "https://www.flickr.com/photos/132731562@N03/albums" class = "socialMediaIcon">
+          <img src = "https://s3-eu-west-1.amazonaws.com/marzipan-projects/assets/flickr.png" class = "img-fluid">
+        </a>
+      </div>
+    </div>
+
+    <div class = "col col-lg-2">
+      <div id = "linkedInIcon" class = "w-50 w-lg-25 mx-auto">
+        <a target = "_blank" href = "https://www.linkedin.com/in/marcelinasula?trk=hp-identity-name" class = "socialMediaIcon">
+          <img src = "https://s3-eu-west-1.amazonaws.com/marzipan-projects/assets/linkedIn.png" class = "img-fluid">
+        </a>
+      </div>
+    </div>
+
+    <div class = "col col-lg-1">
+      <div id = "twitterIcon" class = "w-50 mr-auto mx-lg-auto">
+        <a target = "_blank" href = "https://twitter.com/MarcellBull" class = "socialMediaIcon">
+          <img src = "https://s3-eu-west-1.amazonaws.com/marzipan-projects/assets/twitter.png" class = "img-fluid">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class = "copyright">
+  <div class = "row justify-content-center">
+    <p class="text-center">©marzipan 2017 </p>
+  </div>
+</section>
+
+

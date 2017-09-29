@@ -21,8 +21,7 @@ module.exports = function() {
                 if(data.ContentType.includes('image')) {
                     res.type(data.ContentType);
                     res.send(data.Body.toString('base64'));
-                }               
-                else console.log('other content type');    
+                }                
             }
         });
     }

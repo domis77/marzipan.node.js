@@ -50,7 +50,6 @@ function viewController() {
 
 function switchPage( page ) {  
   if( currentView ) {   
-    // if( pageList.indexOf(page) > pageList.indexOf(this.currentView.el.classList[0]) ) {
       if( pageList.indexOf(page) > pageList.indexOf(currentView.el.classList[0]) ) {
       this.translate = "translateRight";
       this.slide = "slideLeft";
@@ -87,19 +86,16 @@ function switchPage( page ) {
                               .addClass(this.slide);
 
     $(tmpCurrentView.el).one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function() {
-      // that.currentView.close();
       currentView.close();
       $(tmpCurrentView.el).removeClass(that.translate)
                                 .removeClass(that.slide)
                                 .removeClass('container-fluid');
-  // that.currentView = tmpCurrentView; 
       currentView = tmpCurrentView;
 
       $(this).off('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd');
     });
   }
   else {
-    // that.currentView = tmpCurrentView;
     currentView = tmpCurrentView;
   }
 }

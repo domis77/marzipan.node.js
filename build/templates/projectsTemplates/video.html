@@ -1,0 +1,33 @@
+<div class = "wraper row">
+  <div class = "column-left col-lg-9 col-md-8 col-12">
+    <div class = "header row col-12 mx-0">
+      <div class = "icon col-md-4 col-6">
+        <img src= <%= icon %> class="img-fluid">
+      </div>
+      
+      <div class = "title col-6">
+        <h4> <%= title %> </h4>
+      </div>
+      
+      <div class = "description col-12 pt-4">
+        <p class = "text-justify"> <% if( lang == 'fr') { %> <%= description_fr %> <% } else { %> <%= description_en %> <% } %></p>
+      </div>
+    </div>
+    
+    <div class = "videos row justify-content-center pt-4">
+      <% _.each(video, function(elem){ %>
+        <div class = "video id<%= elem.id %> embed-responsive embed-responsive-16by9 col-md-9 col-11 mx-auto">
+          <iframe class='embed-responsive-item' src = <%= elem.patch %> allowfullscreen></iframe>
+        </div> 
+        <% }) %>
+      </div>
+    </div>
+    
+    <div class = "column-right images col-lg-3 col-md-4 col-12">
+      <% _.each(img, function(elem){ %>
+        <div class = "image id<%= elem.id %> col-md-12 col-10 mx-auto my-6">
+          <img id = <%= elem.id %> src = <%= elem.patch %> class="img-fluid">  
+        </div> 
+        <% }) %>
+      </div>
+</div>
