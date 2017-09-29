@@ -1,13 +1,13 @@
 branch-defaults:
   master:
-    environment: marzipan-env
+    environment: marzipan-design
     group_suffix: null
 global:
   application_name: marzipan.node.js
   branch: null
   default_ec2_keyname: null
   default_platform: node.js
-  default_region: us-west-2
+  default_region: eu-west-1
   include_git_submodules: true
   instance_profile: null
   platform_name: null
